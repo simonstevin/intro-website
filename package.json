@@ -1,0 +1,28 @@
+{
+  "name": "simonstevin-intro-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
+    "@nuxtjs/axios": "^5.11.0",
+    "aos": "^2.3.4",
+    "nuxt": "^2.15.7",
+    "nuxt-fontawesome": "^0.4.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^2.0.0"
+  }
+}
