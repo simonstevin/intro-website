@@ -48,8 +48,8 @@ jobs:
           fi
       - name: Authenticate with private NPM package
         run: |
-          echo "@fortawesome:registry = \"https://npm.fontawesome.com/\"" > ~/.npmrc
-          echo "//npm.fontawesome.com/:_authToken = '${{secrets.FONTAWESOME_TOKEN}}'" > ~/.npmrc
+          echo "@fortawesome:registry = \"https://npm.fontawesome.com/\"" >> ~/.npmrc
+          echo "//npm.fontawesome.com/:_authToken = '${{secrets.FONTAWESOME_TOKEN}}'" >> ~/.npmrc
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
