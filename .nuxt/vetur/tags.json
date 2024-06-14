@@ -1,0 +1,14 @@
+{
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "Person": {
+    "description": "Auto imported from components/Person.vue"
+  },
+  "Photo": {
+    "description": "Auto imported from components/Photo.vue"
+  },
+  "PhotoScatter": {
+    "description": "Auto imported from components/PhotoScatter.vue"
+  }
+}
