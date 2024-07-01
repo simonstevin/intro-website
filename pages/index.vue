@@ -23,7 +23,7 @@
       <div class="container mx-auto py-5 my-5 md:my-10 flex">
         <div class="column w-full md:w-1/2 my-0 md:my-0 md:mt-12">
           <h1 class="px-2 md:px-0">W.S.V. Simon Stevin is</h1>
-          <p class="md:pr-5 px-2 md:px-0">the Study Association of Mechanical Engineering in Eindhoven. We organize all sorts of activities for Mechanical Engineering students, from parties to welding workshops.<br/>The study association is a great place to make friends for the rest of your life while having a lot of fun! Interested? Read more below!</p>
+          <p class="md:pr-5 px-2 md:px-0">the Study Association for Mechanical Engineering in Eindhoven. We organize all sorts of activities for Mechanical Engineering students, from parties to welding workshops.<br/>The study association is a great place to make friends for the rest of your life while having a lot of fun! Interested? Read more below!</p>
         </div>
         <div class="hidden md:block md:w-1/2 text-center">
           <div class="photoCell md:ml-auto md:mr-0 mx-auto" :style="{'background-image': 'url(' + welcomeImg + ')'}">
@@ -44,8 +44,9 @@
             <div class="flex flex-wrap pt-10">
               <div class="w-full">
                 <div class="max-w-lg flex flex-row justify-between mx-auto">
-                  <Person class="mx-auto" :src="benImg" name="Ben Gortemaker" phonenr="+31 6 83 54 48 17"></Person>
-                  <Person class="mx-auto" :src="stefanImg" name="Stefan Geerts" phonenr="+31 6 37 30 74 92"></Person>
+                
+                  <Person class="mx-auto" :src="stefan2Img" name="Stefan Geerts" phonenr="+31 6 37 30 74 92"></Person>
+                  <Person class="mx-auto" :src="rixtImg" name="Rixt Hofman" phonenr="+31 6 39 61 95 45"></Person>
                 </div>
               </div>
             </div>
@@ -91,7 +92,7 @@
         <div class="flex flex-wrap">
           <div class="column text-gray-900 w-full md:w-1/2 md:mt-16">
             <p class=" px-2 md:px-0">
-              We have around 150 active members in 25 committees. There are three special committees for freshmen: AcCie, ReAcCie and BattleCie. Joining a committee is a lot of fun and you will learn vital skills for your career and personal development. If you would like to know more, you can take a look here: <a class="underline" href="https://simonstev.in/association/committees">https://simonstev.in/association/committees</a>.
+              We have around 150 active members in 27 committees. There are three special committees for freshmen: AcCie, ReAcCie and BattleCie. Joining a committee is a lot of fun and you will learn vital skills for your career and personal development. If you would like to know more, you can take a look here: <a class="underline" href="https://simonstev.in/association/committees">https://simonstev.in/association/committees</a>.
             </p>
           </div>
           <div class="column text-gray-900 w-full md:w-1/2 mt-10 md:mt-0">
@@ -104,7 +105,7 @@
     <div class="w-full bg-white">
       <div class="container mx-auto py-5 my-10 flex flex-wrap">
         <div class="column w-full md:w-1/2 text-center">
-          <div class="photoCell md:mr-auto md:ml-0 mx-auto" :style="{'background-image': 'url(' + armyImg + ')'}">
+          <div class="photoCell md:mr-auto md:ml-0 mx-auto" :style="{'background-image': 'url(' + brascursie65Img + ')'}">
           </div>
         </div>
         <div class="column w-full md:w-1/2 mt-12 text-gray-900">
@@ -118,7 +119,7 @@
         <div class="column w-full md:w-1/2 mt-0 md:mt-12">
           <h1 class=" px-2 md:px-0">openME</h1>
           <p class="md:pr-5 px-2 md:px-0">
-            openME is the department paper of Mechanical Engineering, of which a physical edition is released twice a year by Simon Stevin. All kinds of articles are also released every week online at <a href="https://www.openme.nl">openME.nl</a>. These articles cover a range of topics: tech-related, the university, studying and about career-related subjects.
+            openME is the department paper of Mechanical Engineering, of which a physical edition is released three times a year by Simon Stevin. All kinds of articles are also released every week online at <a href="https://www.openme.nl">openME.nl</a>. These articles cover a range of topics: tech-related, the university, studying and about career-related subjects.
           </p>
         </div>
         <div class="column w-full md:w-1/2 mt-10 md:mt-0 text-center">
@@ -155,7 +156,7 @@
       <div class="container mx-auto py-5 my-10">
         <div class="flex">
           <div class="column text-black text-center w-full">
-            <small class="text-gray-800">&copy; 2020 W.S.V. Simon Stevin</small>
+            <small class="text-gray-800">&copy; 2024 W.S.V. Simon Stevin</small>
           </div>
         </div>
       </div>
@@ -169,6 +170,8 @@
 
   import kim from "../assets/img/kim_2.jpg";
   import stefan from "../assets/img/stefan.jpg";
+  import stefan2 from "../assets/img/stefan2.jpg";
+  import rixt from "../assets/img/rixt.jpg";
   import sem from "../assets/img/sem.jpg";
   import ben from "../assets/img/ben.jpg";
   import welding from "../assets/img/welding.jpg";
@@ -177,6 +180,7 @@
   import army from "../assets/img/army.jpeg";
   import openme from "../assets/img/openme.jpg";
   import you from "../assets/img/intro.jpeg";
+  import brascursie65 from "../assets/img/brascursie65.jpg";
 
 
   export default {
@@ -187,13 +191,16 @@
         welcomeImg: sem,
         kimImg: kim,
         stefanImg: stefan,
+        stefan2Img: stefan2,
+        rixtImg: rixt,
         benImg: ben,
         weldingImg: welding,
         yachtingImg: landyachting,
         committeeImg: committee,
         armyImg: army,
         openMeImg: openme,
-        youImg: you
+        youImg: you,
+        brascursie65Img: brascursie65
       };
     }
   }

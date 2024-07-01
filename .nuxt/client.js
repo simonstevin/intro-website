@@ -495,7 +495,8 @@ function normalizeComponents (to, ___) {
   })
 }
 
-function setLayoutForNextPage (to) {
+const routeMap = new WeakMap()
+function getLayoutForNextPage (to, from, next) {
   // Set layout
   let hasError = Boolean(this.$options.nuxt.err)
   if (this._hadError && this._dateLastError === this.$options.nuxt.dateErr) {
@@ -507,6 +508,21 @@ function setLayoutForNextPage (to) {
 
   if (typeof layout === 'function') {
     layout = layout(app.context)
+  }
+
+  routeMap.set(to, layout);
+
+  if (next) next();
+}
+
+function setLayoutForNextPage(to) {
+  const layout = routeMap.get(to)
+  routeMap.delete(to)
+
+  const prevPageIsError = this._hadError && this._dateLastError === this.$options.nuxt.dateErr
+
+  if (prevPageIsError) {
+    this.$options.nuxt.err = null
   }
 
   this.setLayout(layout)
@@ -595,6 +611,7 @@ async function mountApp (__app) {
     // Add afterEach router hooks
     router.afterEach(normalizeComponents)
 
+    router.beforeResolve(getLayoutForNextPage.bind(_app))
     router.afterEach(setLayoutForNextPage.bind(_app))
 
     router.afterEach(fixPrepatch.bind(_app))
@@ -620,6 +637,7 @@ async function mountApp (__app) {
   _app.$loading = {} // To avoid error while _app.$nuxt does not exist
   if (NUXT.error) {
     _app.error(NUXT.error)
+    _app.nuxt.errPageReady = true
   }
 
   // Add beforeEach router hooks
@@ -644,10 +662,15 @@ async function mountApp (__app) {
     return mount()
   }
 
+  const clientFirstLayoutSet =  () => {
+     getLayoutForNextPage.call(_app, router.currentRoute)
+    setLayoutForNextPage.call(_app, router.currentRoute)
+  }
+
   // First render on client-side
   const clientFirstMount = () => {
     normalizeComponents(router.currentRoute, router.currentRoute)
-    setLayoutForNextPage.call(_app, router.currentRoute)
+    clientFirstLayoutSet()
     checkForErrors(_app)
     // Don't call fixPrepatch.call(_app, router.currentRoute, router.currentRoute) since it's first render
     mount()

@@ -5,13 +5,13 @@ import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch,
 import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
-import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
+import '..\\node_modules\\@fortawesome\\fontawesome-svg-core\\styles.css'
 
-import '../assets/css/tailwind.css'
+import '..\\assets\\css\\tailwind.css'
 
-import '../node_modules/aos/dist/aos.css'
+import '..\\node_modules\\aos\\dist\\aos.css'
 
-import _6f6c098b from '../layouts/default.vue'
+import _6f6c098b from '..\\layouts\\default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
 
@@ -188,6 +188,7 @@ export default {
           errorLayout = errorLayout(this.context)
         }
 
+        this.nuxt.errPageReady = true
         this.setLayout(errorLayout)
       }
     },
