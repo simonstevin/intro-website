@@ -7,7 +7,7 @@
         </h1>
       </div>
       <div class="top-0 right-0 pr-10 fixed">
-        <a class="block mx-auto w-64 shadow bg-primary hover:bg-primary-700 focus:shadow-outline focus:outline-none text-white px-10 rounded-b text-sm font-bold py-2 uppercase" href="https://simonstev.in/home">To regular website</a>
+        <a class="block mx-auto w-64 shadow bg-primary hover:bg-primary-700 focus:shadow-outline focus:outline-none text-white px-10 rounded-b text-sm font-bold py-2 uppercase" href="https://home.simonstev.in/home">To regular website</a>
       </div>
       <div class="arrow">
         <font-awesome-icon icon="chevron-down" data-aos="fade-up" data-aos-delay="1500" data-aos-anchor-placement="top-center"></font-awesome-icon>
