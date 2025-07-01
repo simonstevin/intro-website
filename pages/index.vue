@@ -46,7 +46,7 @@
                 <div class="max-w-lg flex flex-row justify-between mx-auto">
                 
                   <Person class="mx-auto" :src="rixtImg" name="Rixt Hofman" phonenr="+31 6 39 61 95 45"></Person>
-                  <Person class="mx-auto" :src="videImg" name="Feut Papac, single, ready to mingle" phonenr="+31 6 30 59 43 55"></Person>
+                  <Person class="mx-auto" :src="videImg" name="Vide Papac" phonenr="+31 6 30 59 43 55"></Person>
                 </div>
               </div>
             </div>
