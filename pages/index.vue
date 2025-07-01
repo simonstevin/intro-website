@@ -45,8 +45,8 @@
               <div class="w-full">
                 <div class="max-w-lg flex flex-row justify-between mx-auto">
                 
-                  <Person class="mx-auto" :src="stefan2Img" name="Stefan Geerts" phonenr="+31 6 37 30 74 92"></Person>
                   <Person class="mx-auto" :src="rixtImg" name="Rixt Hofman" phonenr="+31 6 39 61 95 45"></Person>
+                  <Person class="mx-auto" :src="videImg" name="Feut Papac, single, ready to mingle" phonenr="+31 6 30 59 43 55"></Person>
                 </div>
               </div>
             </div>
@@ -156,7 +156,7 @@
       <div class="container mx-auto py-5 my-10">
         <div class="flex">
           <div class="column text-black text-center w-full">
-            <small class="text-gray-800">&copy; 2024 W.S.V. Simon Stevin</small>
+            <small class="text-gray-800">&copy; 2025 W.S.V. Simon Stevin</small>
           </div>
         </div>
       </div>
@@ -171,7 +171,8 @@
   import kim from "../assets/img/kim_2.jpg";
   import stefan from "../assets/img/stefan.jpg";
   import stefan2 from "../assets/img/stefan2.jpg";
-  import rixt from "../assets/img/rixt.jpg";
+  import rixt from "../assets/img/rixt2.jpg";
+  import vide from "../assets/img/vide.jpg";
   import sem from "../assets/img/sem.jpg";
   import ben from "../assets/img/ben.jpg";
   import welding from "../assets/img/welding.jpg";
@@ -193,6 +194,7 @@
         stefanImg: stefan,
         stefan2Img: stefan2,
         rixtImg: rixt,
+        videImg: vide,
         benImg: ben,
         weldingImg: welding,
         yachtingImg: landyachting,
