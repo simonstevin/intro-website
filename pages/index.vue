@@ -1,13 +1,24 @@
 <template>
   <section id="welcome">
     <PhotoScatter class="z-0"></PhotoScatter>
+    <style>
+      .title {
+  overflow: hidden;
+  [data-aos] {
+  overflow: hidden;
+}
+}
+
+    </style>
     <div class="fluid-container relative z-10">
-      <div class="title items-center text-center content-center align-middle flex">
-        <h1 class="w-full text-6xl" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor-placement="top-center">We are mechanical engineers.
-        </h1>
+      <div class="title items-center justify-center text-center content-center align-middle flex overflow-hidden w-full h-full">
+        <p class="text-3xl" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor-placement="top-center">
+          The regular website is currently being updated. However, <br /> contact details and general information can be found on this page.<br />It is expected that the website is running again on Sunday 02-11-25.
+        <br />Our apologies for the inconvenience.
+      </p>
       </div>
       <div class="top-0 right-0 pr-10 fixed">
-        <a class="block mx-auto w-64 shadow bg-primary hover:bg-primary-700 focus:shadow-outline focus:outline-none text-white px-10 rounded-b text-sm font-bold py-2 uppercase" href="https://home.simonstev.in/home">To regular website</a>
+        <a class="block mx-auto w-64 shadow bg-primary hover:bg-primary-700 focus:shadow-outline focus:outline-none text-white px-10 rounded-b text-sm font-bold py-2 uppercase" href="https://home.simonstev.in/home">Regular website might be currently down</a>
       </div>
       <div class="arrow">
         <font-awesome-icon icon="chevron-down" data-aos="fade-up" data-aos-delay="1500" data-aos-anchor-placement="top-center"></font-awesome-icon>
@@ -44,9 +55,8 @@
             <div class="flex flex-wrap pt-10">
               <div class="w-full">
                 <div class="max-w-lg flex flex-row justify-between mx-auto">
-                
-                  <Person class="mx-auto" :src="rixtImg" name="Rixt Hofman" phonenr="+31 6 39 61 95 45"></Person>
-                  <Person class="mx-auto" :src="videImg" name="Vide Papac" phonenr="+31 6 30 59 43 55"></Person>
+                  <Person class="mx-auto" :src="videImg" name="Vide Papac" phonenr="+31 6 30 59 43 55" func="Chairman"></Person>
+                  <Person class="mx-auto" :src="woutImg" name="Wout Meulenbroek" phonenr="+31 6 13 37 11 30" func="Secretary"></Person>
                 </div>
               </div>
             </div>
@@ -173,6 +183,7 @@
   import stefan2 from "../assets/img/stefan2.jpg";
   import rixt from "../assets/img/rixt2.jpg";
   import vide from "../assets/img/vide.jpg";
+  import wout from "../assets/img/wout.jpg";
   import sem from "../assets/img/sem.jpg";
   import ben from "../assets/img/ben.jpg";
   import welding from "../assets/img/welding.jpg";
@@ -191,6 +202,7 @@
       return {
         welcomeImg: sem,
         kimImg: kim,
+        woutImg: wout,
         stefanImg: stefan,
         stefan2Img: stefan2,
         rixtImg: rixt,
