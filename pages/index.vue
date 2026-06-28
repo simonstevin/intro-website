@@ -7,7 +7,7 @@
         </h1>
       </div>
       <div class="top-0 right-0 pr-10 fixed">
-        <a class="block mx-auto w-64 shadow bg-primary hover:bg-primary-700 focus:shadow-outline focus:outline-none text-white px-10 rounded-b text-sm font-bold py-2 uppercase" href="https://home.simonstev.in/home">To regular website</a>
+        <a class="block mx-auto w-64 shadow bg-primary hover:bg-primary-700 focus:shadow-outline focus:outline-none text-white px-10 rounded-b text-sm font-bold py-2 uppercase" href="https://simonstev.in/home">To regular website</a>
       </div>
       <div class="arrow">
         <font-awesome-icon icon="chevron-down" data-aos="fade-up" data-aos-delay="1500" data-aos-anchor-placement="top-center"></font-awesome-icon>
@@ -45,8 +45,8 @@
               <div class="w-full">
                 <div class="max-w-lg flex flex-row justify-between mx-auto">
                 
-                  <Person class="mx-auto" :src="rixtImg" name="Rixt Hofman" phonenr="+31 6 39 61 95 45"></Person>
                   <Person class="mx-auto" :src="videImg" name="Vide Papac" phonenr="+31 6 30 59 43 55"></Person>
+                  <Person class="mx-auto" :src="brittaImg" name="Britte Marrit Los" phonenr="+31 6 42 80 15 67"></Person>
                 </div>
               </div>
             </div>
@@ -156,7 +156,7 @@
       <div class="container mx-auto py-5 my-10">
         <div class="flex">
           <div class="column text-black text-center w-full">
-            <small class="text-gray-800">&copy; 2025 W.S.V. Simon Stevin</small>
+            <small class="text-gray-800">&copy; 2026 W.S.V. Simon Stevin</small>
           </div>
         </div>
       </div>
@@ -172,7 +172,8 @@
   import stefan from "../assets/img/stefan.jpg";
   import stefan2 from "../assets/img/stefan2.jpg";
   import rixt from "../assets/img/rixt2.jpg";
-  import vide from "../assets/img/vide.jpg";
+  import vide from "../assets/img/vide2.png";
+  import britta from "../assets/img/brinta.png";
   import sem from "../assets/img/sem.jpg";
   import ben from "../assets/img/ben.jpg";
   import welding from "../assets/img/welding.jpg";
@@ -196,6 +197,7 @@
         rixtImg: rixt,
         videImg: vide,
         benImg: ben,
+        brittaImg: britta,
         weldingImg: welding,
         yachtingImg: landyachting,
         committeeImg: committee,
