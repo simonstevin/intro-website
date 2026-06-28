@@ -56,7 +56,7 @@
               <div class="w-full">
                 <div class="max-w-lg flex flex-row justify-between mx-auto">
                   <Person class="mx-auto" :src="videImg" name="Vide Papac" phonenr="+31 6 30 59 43 55" func="Chairman"></Person>
-                  <Person class="mx-auto" :src="woutImg" name="Wout Meulenbroek" phonenr="+31 6 13 37 11 30" func="Secretary"></Person>
+                  <Person class="mx-auto" :src="brintaImg" name="Britte Marrit Los" phonenr="+31 6 42 80 15 67" func="Upcoming Chairman"></Person>
                 </div>
               </div>
             </div>
@@ -182,7 +182,8 @@
   import stefan from "../assets/img/stefan.jpg";
   import stefan2 from "../assets/img/stefan2.jpg";
   import rixt from "../assets/img/rixt2.jpg";
-  import vide from "../assets/img/vide.jpg";
+  import vide from "../assets/img/vide2.png";
+  import brinta from "../assets/img/brinta.png";
   import wout from "../assets/img/wout.jpg";
   import sem from "../assets/img/sem.jpg";
   import ben from "../assets/img/ben.jpg";
@@ -207,6 +208,7 @@
         stefan2Img: stefan2,
         rixtImg: rixt,
         videImg: vide,
+        brintaImg: brinta,
         benImg: ben,
         weldingImg: welding,
         yachtingImg: landyachting,
